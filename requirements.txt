@@ -1,0 +1,9 @@
+pandas
+pdfplumber
+sqlalchemy>=2.0.0
+psycopg2-binary
+fuzzywuzzy[speedup]
+requests
+python-Levenshtein
+camelot-py[cv]
+datetime

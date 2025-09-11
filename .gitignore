@@ -1,0 +1,9 @@
+statements/
+test_pdf_statements/
+pdf_parse.ipynb
+pdf_parse.py
+extract_from_pdf.ipynb
+etl_pipeline.py
+cache/
+.cache/
+__pycache__/
