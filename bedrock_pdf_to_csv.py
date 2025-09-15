@@ -21,8 +21,7 @@ def extract_pdf_with_bedrock(file_path):
             {
                 "role": "user",
                 "content": [ 
-                    {"text": """
-                                You are a PDF parser. Extract only the 'Purchases', 'Balance Transfers', and 'Other Charges' tables 
+                    {"text": """You are a PDF parser. Extract only the 'Purchases', 'Balance Transfers', and 'Other Charges' tables 
                                 from the credit card statement. Return only the transaction rows with the header row. 
                                 Exclude totals, fees, interest, or summary rows. 
     
@@ -31,8 +30,7 @@ def extract_pdf_with_bedrock(file_path):
                                 - Do not include code blocks, markdown fences, or any explanations.
                                 - Do not prepend or append labels such as ```csv or "Here is the file".
                                 - The first row must be the header, followed only by transaction rows.
-                            """
-                            },
+                    """},
                     {
                         "document": {
                             "format": "pdf",
@@ -48,7 +46,7 @@ def extract_pdf_with_bedrock(file_path):
         response = client.converse(
             modelId = model_id,
             messages = conversation,
-            inferenceConfig={"maxTokens": 2500, "temperature": 0.1},
+            inferenceConfig={"maxTokens": 2500, "temperature": 0.1, "topP":0.9},
         )
 
         response_text = response["output"]["message"]["content"][0]["text"]
