@@ -1,16 +1,42 @@
 import os
 import shelve
 import requests
+import re
 
-LLM_API_URI = "http://host.docker.internal:11434/v1/chat/completions"
+LLM_API_URI = "http://localhost:11434/v1/chat/completions"
 LLM_MODEL = "gemma3:12b"
 
 cache_path = ".cache/cache.db"
-os.makedirs(os.path.dirname(cache_path))
+os.makedirs(os.path.dirname(cache_path),exist_ok=True)
+
+#Simple logic to normalise descritpion for efficient cache(Needs Improvement)
+def normalise_cache(desc):
+    
+    us_states = {
+        'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+        'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD',
+        'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ',
+        'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
+        'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY', 'DC'
+    }
+    
+    desc = desc.strip().upper()
+    desc = re.sub(r"\d+","",desc)
+    desc = re.sub(r"[^\w\s]","",desc)
+    desc = re.sub(r"\s{2}"," ",desc)
+    
+    words = desc.split()
+    
+    words_no_state = [w for w in words if w not in us_states]
+    
+    normalised_desc = " ".join(words_no_state[:3])
+    
+    
+    return normalised_desc
 
 def categorise_transaction(description):
     
-    description_key = description.strip().lower()
+    description_key = normalise_cache(description)
     category = None
     
     try:
@@ -40,10 +66,13 @@ def categorise_transaction(description):
             category = result["choices"][0]["message"]["content"]
             
             #Writing to description to cache memory 
-            cache[description_key] = category
+            cache[description_key.strip()] = category
             
     except Exception as e:
+        
         print(f"{LLM_MODEL} failed for {description} ")
+        print(f"Reason: {e}")
+        
         category = 'Uncategorised'  
         
     return category
