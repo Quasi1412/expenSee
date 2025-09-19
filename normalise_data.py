@@ -1,5 +1,6 @@
 import pandas as pd
 from io import StringIO
+from categorise_with_ollama import categorise_transaction
 
 def normalise_date(d):
     
@@ -17,8 +18,13 @@ def normalise_df(df):
     date_col = next((col for col in df.columns if 'date' in col),None)
     description_col = next((col for col in df.columns if 'description' in col or 'details' in col))
     amount_col = next((col for col in df.columns if 'amount' in col or 'charges' in col or 'debit' in col))
-    category_col = next((col for col in df.columns if 'category' in col),None)
-    
+
+    #Call the Ollama model to categorise the transaction if not already categorised
+    if 'category' not in df.columns:
+        df['category'] = df[description_col].apply(categorise_transaction)
+        
+    category_col = next(col for col in df.columns if 'category' in col)
+      
     filtered_df = df[[date_col,description_col,category_col,amount_col]]
     filtered_df.columns = ['transaction_date','description','category','amount']
     
