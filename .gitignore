@@ -7,3 +7,4 @@ etl_pipeline.py
 cache/
 .cache/
 __pycache__/
+.env
