@@ -1,7 +1,7 @@
 from io import StringIO
 import pandas as pd
 
-from bedrock_pdf_to_csv import extract_pdf_with_bedrock
+from extract.bedrock_pdf_to_csv import extract_pdf_with_bedrock
 
 def statement_to_df(file_path):
     
