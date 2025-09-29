@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 from extract.bedrock_pdf_to_csv import extract_pdf_with_bedrock
-from process_statements import statement_to_df
-from normalise_data import normalise_df
+from extract.process_statements import statement_to_df
+from transform.normalise_data import normalise_df
 
 parent_directory = "./statements"
  

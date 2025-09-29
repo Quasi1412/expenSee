@@ -1,6 +1,6 @@
 import pandas as pd
 from io import StringIO
-from categorise_with_ollama import categorise_transaction
+from transform.categorise_with_ollama import categorise_transaction
 
 def normalise_date(d):
     
