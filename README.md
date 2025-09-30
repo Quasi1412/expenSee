@@ -5,15 +5,14 @@ This project was an attempt to replicate my knowledge from DE Zoomcamp by DataTa
 <h3>🚀 Features</h3>
 - Extract
     <ul>
-    <li>Parse statements from multiple cards (CSV & PDF).</li>
+    <li>Parse statements from multiple cards (CSV & PDF) using pandas for csv and leveraging Amazon Bedrock for pdf's.</li>
     <li>Normalize formats into a consistent transaction structure.</li>
     <li>Store intermediate outputs as CSVs.</li>
     </ul>
 - Transform
   <ul>
     <li>Clean and normalize data across cards.</li>
-    <li>Categorize transactions (Groceries, Restaurants, Insurance, Loans, Gas, Entertainment).</li>
-    <li>Detect recurring charges using LLM-powered categorization (Ollama).</li>
+    <li>Categorize transactions (Groceries, Restaurants, Insurance, Loans, Gas, Entertainment)using LLM-powered categorization (Ollama).</li>
   </ul>
 - Load
   <ul>
@@ -57,3 +56,12 @@ This project was an attempt to replicate my knowledge from DE Zoomcamp by DataTa
 
 
   ```
+
+NOTE: Areas for improvement<br> 
+    <ul>
+        <li> Need to fix the pdf extraction logic. Using Bedrock seems to work but not very efficient and inconsistent. Eploring camelot package to find a general one-stop solution of all pdf structures </li>
+        <li> Implement logic to detect and label recurring charges </li>
+        <li> The logic to normalise date is hardcoded to the current year. Need to find a way to extract year from the pdf statement</li>
+
+
+        
