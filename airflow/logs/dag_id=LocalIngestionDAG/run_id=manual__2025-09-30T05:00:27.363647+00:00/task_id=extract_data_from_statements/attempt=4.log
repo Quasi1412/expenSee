@@ -1,0 +1,53 @@
+{"timestamp":"2025-09-30T05:40:46.017413","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-30T05:40:46.017688","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-30T05:40:46.818417Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - May 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.820301Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - February 2026.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.821192Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - January 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.821858Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - June 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.822522Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - July 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.823146Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - March 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.823879Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - April 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.827383Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jul.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.828200Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jun.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.828928Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.829194Z","level":"info","event":"Error Processing /opt/airflow/statements/Amexplatinum/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/Amexplatinum/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.829271Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jan.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.829937Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/May.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.830535Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Mar.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.831305Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Feb.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.832005Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Apr.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.834137Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jul.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.834914Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jun.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.835720Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.835797Z","level":"info","event":"Error Processing /opt/airflow/statements/AmexGold/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/AmexGold/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.835868Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jan.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.836603Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/May.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.837344Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Mar.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.838147Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Feb.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.838902Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Apr.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.840877Z","level":"info","event":"Processing /opt/airflow/statements/Discover/Discover-2025-YearToDateSummary.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.844493Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 030725 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:46.848571","level":"info","event":"Found credentials in shared credentials file: ~/.aws/credentials","logger":"botocore.credentials"}
+{"timestamp":"2025-09-30T05:40:58.245656Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:58.248786Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/WellsFargo/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:40:58.249154Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 020525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:41:13.498515Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 040725 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:41:33.549569Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/ 040725 WellsFargo.pdf. Response: Error tokenizing data. C error: Expected 7 fields in line 6, saw 8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:41:33.550527Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:41:33.550878Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 010825 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:41:50.774071Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 071525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:02.453054Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 071525 WellsFargo.pdf. Response: Error tokenizing data. C error: Expected 5 fields in line 3, saw 6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:02.454920Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:02.458511Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 061325 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:18.637897Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 041425 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:30.601860Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 011525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:42.388973Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 021225 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:54.876822Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 021225 WellsFargo.pdf. Response: Error tokenizing data. C error: Expected 5 fields in line 4, saw 7","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:54.879294Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:42:54.879487Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 051525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:43:05.432712Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 031425 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:43:18.031286Z","level":"info","event":"Processing /opt/airflow/statements/CapitalOne/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:43:18.031605Z","level":"info","event":"Error Processing /opt/airflow/statements/CapitalOne/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/CapitalOne/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:43:18.032025Z","level":"info","event":"Processing /opt/airflow/statements/CapitalOne/2025-08-03_transaction_download.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:43:18.036561","level":"info","event":"Done. Returned value was: ['extracted/Apple.csv', 'extracted/Amexplatinum.csv', 'extracted/AmexGold.csv', 'extracted/Discover.csv', 'extracted/WellsFargo.csv', 'extracted/Bilt.csv', 'extracted/CapitalOne.csv']","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-30T05:43:18.037495","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01999923-310d-7f32-abb4-2e1c79d64f79'), task_id='extract_data_from_statements', dag_id='LocalIngestionDAG', run_id='manual__2025-09-30T05:00:27.363647+00:00', try_number=4, map_index=-1, hostname='4302fa03c294', context_carrier={}, task=<Task(PythonOperator): extract_data_from_statements>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=3, start_date=datetime.datetime(2025, 9, 30, 5, 40, 45, 601680, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/LocalIngestionDAG/runs/manual__2025-09-30T05%3A00%3A27.363647%2B00%3A00/tasks/extract_data_from_statements?try_number=4')","logger":"task"}

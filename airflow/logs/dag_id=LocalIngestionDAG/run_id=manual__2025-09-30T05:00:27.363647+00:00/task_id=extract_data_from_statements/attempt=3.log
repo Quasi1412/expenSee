@@ -1,0 +1,57 @@
+{"timestamp":"2025-09-30T05:30:29.773688","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-30T05:30:29.774017","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-30T05:30:29.952432Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - May 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.963311Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - February 2026.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.964232Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - January 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.964921Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - June 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.965750Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - July 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.966480Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - March 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.967349Z","level":"info","event":"Processing /opt/airflow/statements/Apple/Apple Card Transactions - April 2025.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.973170Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jul.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.973928Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jun.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.974505Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.974768Z","level":"info","event":"Error Processing /opt/airflow/statements/Amexplatinum/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/Amexplatinum/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.974832Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Jan.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.976733Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/May.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.977314Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Mar.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.978033Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Feb.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.978734Z","level":"info","event":"Processing /opt/airflow/statements/Amexplatinum/Apr.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.995856Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jul.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.996772Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jun.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.997612Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.997671Z","level":"info","event":"Error Processing /opt/airflow/statements/AmexGold/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/AmexGold/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.997728Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Jan.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.998327Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/May.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.999100Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Mar.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:29.999998Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Feb.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:30.000730Z","level":"info","event":"Processing /opt/airflow/statements/AmexGold/Apr.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:30.002778Z","level":"info","event":"Processing /opt/airflow/statements/Discover/Discover-2025-YearToDateSummary.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:30.006162Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 030725 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:32.255019Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/ 030725 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:32.255138Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:32.255196Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/WellsFargo/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:32.255265Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 020525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:34.278450Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/ 020525 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:34.280075Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 040725 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.307939Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/ 040725 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.308939Z","level":"info","event":"Processing /opt/airflow/statements/WellsFargo/ 010825 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.332448Z","level":"info","event":"Error Processing /opt/airflow/statements/WellsFargo/ 010825 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.335289Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 071525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.335712Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 071525 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.335874Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 061325 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.344515Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 061325 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.344736Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 041425 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.351234Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 041425 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.351517Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 011525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.357187Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 011525 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.357456Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 021225 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.362053Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 021225 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.362173Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 051525 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.366644Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 051525 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.366740Z","level":"info","event":"Processing /opt/airflow/statements/Bilt/ 031425 WellsFargo.pdf","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.371532Z","level":"info","event":"Error Processing /opt/airflow/statements/Bilt/ 031425 WellsFargo.pdf. Response: Unable to locate credentials","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.372010Z","level":"info","event":"Processing /opt/airflow/statements/CapitalOne/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.372249Z","level":"info","event":"Error Processing /opt/airflow/statements/CapitalOne/.DS_Store. Response: Unsupported File format: /opt/airflow/statements/CapitalOne/.DS_Store","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.372453Z","level":"info","event":"Processing /opt/airflow/statements/CapitalOne/2025-08-03_transaction_download.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-30T05:30:35.375879","level":"info","event":"Done. Returned value was: ['extracted/Apple.csv', 'extracted/Amexplatinum.csv', 'extracted/AmexGold.csv', 'extracted/Discover.csv', 'extracted/CapitalOne.csv']","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-30T05:30:35.376149","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01999919-cdd7-79ab-9402-71c9d02efe20'), task_id='extract_data_from_statements', dag_id='LocalIngestionDAG', run_id='manual__2025-09-30T05:00:27.363647+00:00', try_number=3, map_index=-1, hostname='4aa79fe5cb70', context_carrier={}, task=<Task(PythonOperator): extract_data_from_statements>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2025, 9, 30, 5, 30, 29, 682998, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/LocalIngestionDAG/runs/manual__2025-09-30T05%3A00%3A27.363647%2B00%3A00/tasks/extract_data_from_statements?try_number=3')","logger":"task"}
