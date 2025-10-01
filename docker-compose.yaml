@@ -1,8 +1,7 @@
-version: "3.8"
 
 services:
   
-  postgres:
+  expenses:
     image: postgres:13
     restart: always
     environment:
@@ -12,20 +11,22 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - transaction_data:/var/lib/postgresql/data
+    networks:
+      - airflow
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U root"]
       interval: 10s
       timeout: 5s
       retries: 5
   
-  pgadmin:
-    image: dpage/pgadmin4
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-      - PGADMIN_DEFAULT_PASSWORD=root
-    ports:
-      - "8080:80"
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+  #     - PGADMIN_DEFAULT_PASSWORD=root
+  #   ports:
+  #     - "8080:80"
   
   metabase:
     image: metabase/metabase
@@ -40,25 +41,13 @@ services:
       MB_DB_PASS: root
       MB_DB_HOST: postgres
     depends_on:
-      postgres:
+      expenses:
         condition: service_healthy
 
-  etl:
-    build: .
-    depends_on:
-      - postgres
-    environment:
-      - PGUSER=root
-      - PGPASSWORD=root
-      - PGDATABASE=expense_db
-      - PGHOST=postgres
-      - PGPORT=5432
-    volumes:
-      - ./statements:/app/statements
-      - ./cache:/app/.cache
-      - .:/app
-    command: python etl_pipeline.py
-    restart: "no"
+networks:
+  airflow:
+    external: true
+    name: airflow_default
 
 volumes:
-  pgdata:
+  transaction_data:
