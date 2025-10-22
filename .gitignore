@@ -7,3 +7,7 @@ __pycache__/
 .env
 airflow/logs/
 airflow/config
+.terraform*
+textractplan
+terraform*
+pdf_trail.ipynb
