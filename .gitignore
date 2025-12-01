@@ -11,3 +11,4 @@ airflow/config
 textractplan
 terraform*
 pdf_trail.ipynb
+textract_trail.ipynb
