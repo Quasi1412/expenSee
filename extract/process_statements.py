@@ -1,7 +1,8 @@
 from io import StringIO
 import pandas as pd
 
-from extract.bedrock_pdf_to_csv import extract_pdf_with_bedrock
+#from extract.bedrock_pdf_to_csv import extract_pdf_with_bedrock
+from extract_with_textract import extract_table_with_textract
 
 def statement_to_df(file_path):
     
@@ -12,17 +13,7 @@ def statement_to_df(file_path):
         
         elif file_path.endswith('.pdf'):
             
-            extracted_table = extract_pdf_with_bedrock(file_path)
-            
-            #Removing the ```csv fences and white spaces if available
-            if extracted_table.startswith("```csv"):
-                extracted_table = extracted_table[6:]
-                if extracted_table.endswith("```"):
-                    extracted_table = extracted_table[:-3]
-            extracted_table = extracted_table.strip()
-                
-            df = pd.read_csv(StringIO(extracted_table))
-            
+            df = extract_table_with_textract(file_path)
             return df
         
         else:
